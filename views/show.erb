@@ -1,0 +1,30 @@
+
+<h2>
+  <%= @band['name'] %>
+</h2>
+
+<a href="/bands/<%= @band['id'] %>/edit">Edit This Band</a>
+<a href="/bands/new/album">Add Album</a>
+<a href="/bands/<%= @band['id'] %>/delete">Delete This Band</a>
+<br><br>
+
+<p>
+  <strong>Band formed in:</strong>
+  <%= @band['formed'] %>
+
+  <strong>Is the band still together:</strong>
+  <%= @band['formed'] %>
+
+  <strong>Albums</strong>
+  <ul>
+
+    <% @band.albums.each do |album|  %>
+    <li>
+      <a href="/bands/<%= @band['id'] %>/album['id']"><%= album['name'] %></a>
+    </li>
+    <% end %>
+  </ul>
+
+  <strong>Photo of the band:</strong>
+  <%= @band['formed'] %>
+</p>

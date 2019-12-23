@@ -1,0 +1,12 @@
+<h2>All Bands</h2>
+
+<ul>
+  <% @results.each do |band| %>
+  <li>
+    <a href="/bands/<%= band['id'] %>">
+      <%= band['name'] %>
+    </a>
+  </li>
+  <% end %>
+
+</ul>
